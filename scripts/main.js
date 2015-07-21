@@ -4,11 +4,17 @@ var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
 	var mySrc = myImage.getAttribute('src');
-	if(mySrc === 'images/Worm.png') {
-      myImage.setAttribute ('src','images/Worm.png');
-	} else {
-	  myImage.setAttribute ('src','images/firefox-icon.png');
-	}
+	switch(mySrc){
+		case 'images/m1.png':
+			myImage.setAttribute ('src','images/m2.png');
+		break;
+		case 'images/m2.png':
+			myImage.setAttribute ('src','images/m3.png');
+		break;
+		case 'images/m3.png':
+			myImage.setAttribute ('src','images/m1.png');
+		break;
+	}	
 }
 
 // Personalized welcome message code
@@ -19,14 +25,14 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+  myHeading.innerHTML = 'Allen is cool, ' + myName;
 }
 
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   var storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+  myHeading.innerHTML = 'Allen is cool, ' + storedName;
 }
 
 myButton.onclick = function() {
