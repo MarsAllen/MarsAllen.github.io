@@ -292,11 +292,12 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
-        padding-bottom: 50%;
+        padding-bottom: 60%;
     }
     
     .content-section-menu{
-        padding-bottom: 50%;
+        padding-top: 100px;
+        padding-bottom: 60%;
     }
 
     .menu-section {
@@ -402,6 +403,7 @@ body {
 }
 
 #about{
+    height:100%;
     width: 100%;
     background-color: #000; 
 }
