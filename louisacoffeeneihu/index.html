@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 	<head>
 		<meta charset="utf-8">
@@ -53,7 +53,7 @@
 			
 			/*nav shrink*/
 			nav.navbar.shrink {
-				min-height: 25px;
+				opacity:1;
 			}
 			
 			/*navbar-brand fix*/
@@ -77,6 +77,10 @@
 				color:white;
 				font-weight:bold;
 				font-family:Microsoft JhengHei;
+			}
+			
+			.navbar-inverse .navbar-nav>li>a:hover{
+				color:#DF7055;
 			}
 			
 			/*header backgroud image property*/
@@ -103,7 +107,7 @@
 			
 		</style>
 	</head>
-	<body id="top-page">
+	<body id="top-page" data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- Navbar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
@@ -258,3 +262,4 @@
 		</script>	
 	</body>
 </html>
+\ No newline at end of file
