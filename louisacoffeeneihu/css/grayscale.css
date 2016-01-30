@@ -426,14 +426,3 @@ body {
     background-image: url(../images/linebutton__louisacoffeeneihu_tp_origin.png);
 	background-repeat: no-repeat;
 }
-
-#pop{
-	cursor:zoom-in;
-}
-
-#the-modal{
-	width: 1024px; 
-	height: 100%; 
-	margin: 0 auto;
-	cursor:zoom-out;
-}
