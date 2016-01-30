@@ -90,6 +90,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">聯絡我們</a>
                     </li>
+					<li>
+                        <a class="page-scroll" href="#map-section">地點資訊</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -135,8 +138,12 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>菜單</h2>
-                    <img title="菜單 | 路易莎咖啡 Louisa Coffee | 內湖店 | 台北市 | 內湖區" alt="菜單 | 路易莎咖啡 Louisa Coffee | 內湖店 | 台北市 | 內湖區" class="img-thumbnail img-responsive" src="images/menu1_louisacoffeeneihu.png"/>
-
+                    <a href="#">
+						<a href="./images/menu1_louisacoffeeneihu.png" id="pop">
+							<img title="菜單 | 路易莎咖啡 Louisa Coffee | 內湖店 | 台北市 | 內湖區" alt="菜單 | 路易莎咖啡 Louisa Coffee | 內湖店 | 台北市 | 內湖區" class="img-thumbnail img-responsive" src="images/menu1_louisacoffeeneihu.png"/>
+						</a>
+						<img id="the-modal" class="modal fade" src="images/menu1_louisacoffeeneihu.png">
+					</a>
                 </div>
             </div>
         </div>
@@ -158,23 +165,29 @@
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        <a href="http://www.facebook.com/louisacoffeeneihu" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
+					<li id="f-line-li">
+						<a id="line-glyph" href="http://line.me/ti/p/FwPPXHlDY6" class="btn btn-default btn-lg"><div class="f-line"></div><span class="network-name">&nbsp;Line</span></a>
+					</li>
                     <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram+</span></a>
+                        <a href="https://www.instagram.com/louisacoffeeneihu/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
+	
+	<!-- Map Section -->	
+	<section id="map-section" class="container content-section text-center">
+		<h2>地點資訊</h2>
+		<div id="map"></div>
+	</section>
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Louisa Coffe Neihu 2016</p>
+            <p>Copyright &copy; Louisa Coffee Neihu 2016</p>
         </div>
     </footer>
 
@@ -188,7 +201,9 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=drawing"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPp16jCWOC070RN_V8e7HafbRsxVStKhU&libraries=places"> -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>

@@ -39,7 +39,31 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+    map.setCenter(new google.maps.LatLng(25.0814444,121.5717207));
+});
+
+//Fake font awesome pic hover effect of Line 
+$(function() {
+	$("#f-line-li")
+	.mouseover(function() { 
+		$(".f-line").css("background-image", "url(./images/linebutton__louisacoffeeneihu_tp_hover.png)");
+    })
+    .mouseout(function() {
+        $(".f-line").css("background-image", "url(./images/linebutton__louisacoffeeneihu_tp_origin.png)");
+    });
+});
+ 
+$(function() {
+	$("#map").on( "click", function() {
+		window.open("https://maps.google.com?q=路易莎咖啡 內湖店 內湖路一段");
+	});   
+});
+ 
+$(function() { 
+	$("#pop").on("click", function(e) {
+	   e.preventDefault();
+	   $('#the-modal').modal('toggle');
+	});
 });
 
 function init() {
@@ -47,19 +71,21 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 17,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(25.0814444,121.5717207), // Louisa Coffee Neihu
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
         draggable: false,
+		zoomControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP //地圖類型
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [{
+        /* styles: [{
             "featureType": "water",
             "elementType": "geometry",
             "stylers": [{
@@ -166,7 +192,7 @@ function init() {
             }, {
                 "weight": 1.2
             }]
-        }]
+        }] */
     };
 
     // Get the HTML DOM element that will contain your map 
@@ -175,13 +201,14 @@ function init() {
 
     // Create the Google Map using out element and options defined above
     map = new google.maps.Map(mapElement, mapOptions);
-
+	
+	//louisa marker
+	
+	
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
+    var louisaLatLng = new google.maps.LatLng(25.0814444,121.5717207);
+    var louisaMarker = new google.maps.Marker({
+        position: louisaLatLng,
         map: map,
-        icon: image
     });
 }
