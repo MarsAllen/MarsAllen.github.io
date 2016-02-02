@@ -261,11 +261,13 @@ a:focus {
 .content-section {
     padding-top: 100px;
     padding-bottom: 30%;
+	height:100%;
 }
 
 .content-section-menu{
     padding-top: 80px;
     padding-bottom: 60%;
+	height:100%;
 }
 
 .content-section h2{
@@ -294,11 +296,13 @@ a:focus {
     .content-section {
         padding-top: 250px;
         padding-bottom: 80%;
+		height:100%;
     }
     
     .content-section-menu{
         padding-top: 70px;
         padding-bottom: 60%;
+		height:100%;
     }
 
     .download-section {
