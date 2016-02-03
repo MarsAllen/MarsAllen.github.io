@@ -66,6 +66,11 @@ $(function() {
 	});
 });
 
+//open a larger menu image to a new page
+function enlargeIMG(){
+	window.open("https://marsallen.github.io/louisacoffeeneihu/images/menu1_louisacoffeeneihu_lg.png");
+}
+
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
