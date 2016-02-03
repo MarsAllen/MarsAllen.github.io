@@ -260,13 +260,13 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
-    padding-bottom: 70%;
+    padding-bottom: 30%;
 	height:100%;
 }
 
 .content-section-menu{
-    padding-top: 100px;
-    padding-bottom: 70%;
+    padding-top: 200px;
+    padding-bottom: 60%;
 	height:100%;
 }
 
