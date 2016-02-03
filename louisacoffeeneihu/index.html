@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
+<!-- Forcing a redirect to https: -->
+<script>
+	var host = "marsallen.github.io/louisacoffeeneihu";
+	if ((host == window.location.host) && (window.location.protocol != "https:")){
+		window.location.protocol = "https";
+	}
+</script>
 <head>
 
     <meta charset="utf-8">
@@ -56,13 +62,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<!-- Forcing a redirect to https: -->
-	<script>
-		var host = "marsallen.github.io/louisacoffeeneihu";
-		if ((host == window.location.host) && (window.location.protocol != "https:"))
-			window.location.protocol = "https";
-	</script>
 	
 	<!-- Google Analytics -->
 	<script>
